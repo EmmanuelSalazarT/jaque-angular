@@ -15,9 +15,11 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "types": ["node"],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
+    "types": ["node"],
   }
 }

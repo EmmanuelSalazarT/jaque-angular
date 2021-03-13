@@ -11,6 +11,11 @@ import { AdmonComponent } from './admon/admon.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
 
 const routes: Routes = [
+  {
+    path: "",
+		pathMatch: 'full',
+		redirectTo: 'admon',
+  },
 	{
 		path: 'admon',
 		component: AdmonComponent,
