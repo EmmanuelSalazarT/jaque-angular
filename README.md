@@ -38,9 +38,11 @@ Usuarios disponibles:
 - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 Rutas públicas (Accesible solo si no se ha identificado el usuario): 
+
     /login
     
 Rutas privadas (Solo accesibles una vez identificado el usuario):
+
     /private/admon          --> Listado de usuarios
     /private/analytics      --> Gráfica de ventas
 
