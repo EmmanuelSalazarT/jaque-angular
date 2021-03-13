@@ -3,23 +3,12 @@
 
 /* Colors */
 
-$amanecer : transparent linear-gradient(180deg, #E05328 0%, #F08300 100%) 0% 0% no-repeat padding-box;;
-$tabique: #E15527;
-$shopper: #F0920C;
 $oxford: #d1d4de;
-$white: #FFFFFF;
-$black: #00000099;
-$deli: #61C539;
 $disabled: #6C8DD5;
 $error:#A2410B;
-$success: #00BA51;
 $backgroundColor: #4962D6;
 
 $primary: #73B962;
-
-$backgroundSuccessColor: #00B8541A;
-$backgroundErrorColor: #FF503C26;
-$backgroundWarningColor: #FFCF6026;
 /* fonts */
 
 $primaryFont: "Open Sans";
@@ -30,12 +19,3 @@ $secundaryFont: "Barlow";
 $backgroundInput: #EFEFF4;
 $shadowColorInput: #73B962;
 
-/* buttons */
-
-$paddingButton: 6.5px 20px 6.5px 20px;
-$borderSecondaryButton:$deli;
-$disableText: #a3a3a3;
-
-/* text */
-
-$headerColor: #000000DE;

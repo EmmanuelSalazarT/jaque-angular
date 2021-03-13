@@ -1,11 +1,17 @@
-<p>analytics works!</p>
+<div class="w-100">
+   <div class="card centered sm-w-100 md-w-75 text-center">
+       <h1>SALES ANALYTICS</h1>
+   </div>
+</div>
 
-<google-chart #chart
-   [title]="title"
-   [type]="type"
-   [data]="data"
-   [columns]="columnNames"
-   [options]="options"
-   [width]="width"
-   [height]="height">
-</google-chart>
+<div class="w-100 analytics-table">
+   <google-chart #chart
+      [title]="title"
+      [type]="type"
+      [data]="data"
+      [columns]="columnNames"
+      [options]="options"
+      [width]="width"
+      [height]="height">
+   </google-chart>
+</div>

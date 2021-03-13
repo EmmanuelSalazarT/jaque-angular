@@ -10,6 +10,10 @@
 
     li {
         float: left;
+        &.active
+        {
+            background-color: gray;
+        }
         a{
             display: block;
             color: white;
@@ -20,6 +24,10 @@
             &:hover{
                 background-color: #111;
             }
+        }
+        &:last-child {
+            border-right: none;
+            float:right;
         }
     }
 }
