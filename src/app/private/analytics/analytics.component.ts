@@ -25,7 +25,7 @@ export class AnalyticsComponent implements OnInit {
 			title: 'Quantity'
 		},
 	};
-	width = window.innerWidth;
+	width = window.innerWidth-20;
 	height = 400;
 
 	constructor(private saleService: SaleService) { }
@@ -36,7 +36,7 @@ export class AnalyticsComponent implements OnInit {
 	
 	@HostListener('window:resize', ['$event'])
 	windowResizeEvent(event: WindowEventHandlers) {
-		this.width = window.innerWidth;
+		this.width = window.innerWidth-20;
 	}
 
 	loadData(){
