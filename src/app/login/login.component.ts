@@ -27,7 +27,6 @@ export class LoginComponent implements OnInit {
 		.then(
 			user => {
 				if(user){
-					delete user.password;
 					this.authLibrary.setUser(user);
 					this.router.navigate(['/private/admon'])
 				}
