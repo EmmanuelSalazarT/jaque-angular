@@ -1,3 +1,5 @@
+@import "../sass/base/variables.scss";
+
 .menu{
     
     ul {
@@ -5,7 +7,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #333;
+        background-color: $backgroundPaginator;
     }
 
     li {
