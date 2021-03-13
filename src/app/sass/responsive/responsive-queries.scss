@@ -1,0 +1,100 @@
+.w-100{
+    width: 100%;
+}
+.w-75{
+    width: 75%;
+}
+.w-50{
+    width: 50%;
+}
+.w-25{
+    width: 25%;
+}
+
+.m-l-10
+{
+    margin-left: 10px;
+}
+
+@media (min-width: 576px) { 
+    .sm-w-100{
+        width: 100%;
+    }
+    .sm-w-75{
+        width: 75%;
+    }
+    .sm-w-50{
+        width: 50%;
+    }
+    .sm-w-25{
+        width: 25%;
+    }
+
+    .sm-m-l-10
+    {
+        margin-left: 10px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .md-w-100{
+        width: 100%;
+    }
+    .md-w-75{
+        width: 75%;
+    }
+    .md-w-50{
+        width: 50%;
+    }
+    .md-w-25{
+        width: 25%;
+    }
+
+    .wd-m-l-10
+    {
+        margin-left: 10px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .lg-w-100{
+        width: 100%;
+    }
+    .lg-w-75{
+        width: 75%;
+    }
+    .lg-w-50{
+        width: 50%;
+    }
+    .lg-w-25{
+        width: 25%;
+    }
+
+    .lg-m-l-10
+    {
+        margin-left: 10px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .xl-w-100{
+        width: 100%;
+    }
+    .xl-w-75{
+        width: 75%;
+    }
+    .xl-w-50{
+        width: 50%;
+    }
+    .xl-w-25{
+        width: 25%;
+    }
+
+    .xl-m-l-10
+    {
+        margin-left: 10px;
+    }
+}

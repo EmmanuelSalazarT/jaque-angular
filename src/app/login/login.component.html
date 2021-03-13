@@ -1,56 +1,69 @@
-<p>login works!</p>
+<div class="w-100">
+    <div class="card centered sm-w-100 md-w-75 text-center">
+        <h1>SALES REPORT AND USER LIST</h1>
+    </div>
+</div>
 
-<div class="center-wrapper">
-    <form >
-        <div class="form-element">
-            <label for="email">Email: </label>
-            <input type="email" 
-                id="email" 
-                name="email"
-                [(ngModel)]="email"
-                #emailInput="ngModel"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-                required
-                />
-
-            <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)">
-                <span *ngIf="emailInput.errors.required">
-                    Email is required.
-                </span>
-                <span *ngIf="emailInput.errors.pattern">
-                    Email format is wrong.
-                </span>
-
+<div class="w-100 form-wrapper">
+    <div class="centered sm-w-100 md-w-100 lg-w-50 xl-w-50 card">
+        <form >
+            <div class="form-element">
+                <label for="email">Email: </label>
+                <input type="email" 
+                    id="email" 
+                    name="email"
+                    [(ngModel)]="email"
+                    #emailInput="ngModel"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                    required
+                    />
+    
+                <div class="shp-message-error" 
+                    *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)"
+                    >
+                    <span *ngIf="emailInput.errors.required">
+                        Email is required.
+                    </span>
+                    <span *ngIf="emailInput.errors.pattern">
+                        Email format is wrong.
+                    </span>
+    
+                </div>
             </div>
-        </div>
-        <div class="form-element">
-            <label for="password">Password: </label>
-            <input type="password" 
-                id="Password" 
-                name="Password"
-                [(ngModel)]="password"
-                #passwordInput="ngModel"
-                required
-                />
-            <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)">
-                <span *ngIf="passwordInput.errors.required">
-                    Password is required.
-                </span>
-
+            <div class="form-element">
+                <label for="password">Password: </label>
+                <input type="password" 
+                    id="Password" 
+                    name="Password"
+                    [(ngModel)]="password"
+                    #passwordInput="ngModel"
+                    required
+                    />
+                <div class="shp-message-error" 
+                    *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)"
+                    >
+                    <span *ngIf="passwordInput.errors.required">
+                        Password is required.
+                    </span>
+    
+                </div>
             </div>
-        </div>
-        <div class="form-element">
-            <input type="submit" 
-                (click)="sendLogin()"
-                value="Login" 
-                [disabled]="passwordInput.invalid || emailInput.invalid"
-                />
-            
-        </div>
-        <div *ngIf="dontMatchUser">
-            <span >
-                User dont finded
-            </span>
-        </div>
-    </form>
+            <div class="form-element">
+                <input type="submit" 
+                    class=""
+                    (click)="sendLogin()"
+                    value="Login" 
+                    [disabled]="passwordInput.invalid || emailInput.invalid"
+                    />
+                
+            </div>
+            <div class="shp-message-error" 
+                *ngIf="dontMatchUser"
+                >
+                <span >
+                    User dont finded
+                </span>
+            </div>
+        </form>
+    </div>
 </div>

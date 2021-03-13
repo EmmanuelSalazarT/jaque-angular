@@ -1,0 +1,188 @@
+body{
+    font-family: $primaryFont;
+    color: $oxford;
+    background-color: $backgroundColor;
+    h1, h2, h3{
+        font-family: $secundaryFont;
+        font-weight: bold;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2, h3{
+        font-size: 18px;
+    }
+    h4{
+        font-family: $primaryFont;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    h5{
+        font-family: $primaryFont;
+        font-size: 14px;
+    }
+}
+
+label{
+    margin-bottom: 16px;
+}
+/* inputs */
+
+input, select, textarea{
+    width: 100%;
+    border: 0px solid $backgroundInput;
+    border-bottom: 1px solid $primary;
+    background-color: $backgroundInput;
+    min-height: 14px;
+    font-family: $primaryFont;
+    font-size: 14px;
+    margin-bottom: 16px;
+    padding: 10px;
+    margin-left: -10px;
+
+    &.ng-invalid{
+        &.ng-touched{
+            border-bottom: 1px solid $error;
+        }
+        
+    }
+
+    &[type="checkbox"]{
+        width: 17px;
+        height: 17px;
+    }
+    &[type="radio"]{
+        width: 16px;
+        height: 16px;
+    }
+
+    &[type="submit"]{
+        font-weight: 800;
+        margin-left: 0px;
+    }
+
+    &:disabled, &:read-only{
+        border-bottom: 1px solid #AAAAAA;
+        background-color: $disabled;
+        color: $white;
+    }
+}
+
+textarea{
+    width: 100%;
+    min-height: 77.5px;
+}
+
+select{
+    height: 38px;
+}
+
+/* Buttons */
+
+button{
+    background: #E0E1E2 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    text-align: center;
+    font-family: $primaryFont;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: bold;
+    color: $black;
+    opacity: 1;
+    padding: $paddingButton;
+
+    &.btn{
+        font-size: 14px;
+    }
+    
+    &.shp-btn-primary{
+        background: $primary 0% 0% no-repeat padding-box !important;
+        color: $white  !important;
+        font-weight: 600 !important;
+    }
+    
+    &.shp-btn-secondary{
+        background: $white 0% 0% no-repeat padding-box !important;
+        border: 1px solid $borderSecondaryButton !important;
+        font-weight: 600 !important;
+        text-decoration: underline !important;
+        color: $primary !important;
+    }
+
+    &.shp-btn-tertiary{
+        background: $white 0% 0% no-repeat padding-box !important;
+        border: 0px solid $borderSecondaryButton !important;
+        font-weight: 600 !important;
+        text-decoration: underline !important;
+        color: $primary !important;    
+    }
+
+
+    &.shp-btn-delete{
+        background: $white 0% 0% no-repeat padding-box !important;
+        border: 0px solid $borderSecondaryButton !important;
+        font-weight: 600 !important;
+        text-decoration: underline !important;
+        color: $error !important;    
+    }    
+
+    &.shp-btn-deleteButton {
+        background: $white 0% 0% no-repeat padding-box !important;
+        border: 1px solid #F23C2F !important;
+        font-weight: 600 !important;
+        text-decoration: underline !important;
+        color: #F23C2F !important;
+    }
+
+    &:disabled{
+        background: #E0E1E2 0% 0% no-repeat padding-box;
+        border: none;
+        text-decoration: none;
+        color: $disableText;
+    }
+}
+
+/* text */
+
+label, p, div, a{
+    font-family: $primaryFont;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+a{
+    color: $primary;
+    font-weight: 600;
+    text-decoration: underline;
+
+    &:hover{
+        color: $primary;
+    }
+}
+
+/* Messages */
+
+.shp-message{
+    width: 100%;
+    border-radius: 4px;
+    min-height: 30px;
+    padding: 8px 15px 5px 15px;
+    &-success{
+        @extend .shp-message;
+        background: $backgroundSuccessColor 0% 0% no-repeat padding-box;
+        color: $success;
+    }
+    &-error{
+        @extend .shp-message;
+        color: $error;
+        padding:0;
+    }
+    &-warning{
+        @extend .shp-message;
+        background: $backgroundWarningColor 0% 0% no-repeat padding-box;
+    }
+}
+
+.italics {
+    font-style: italic !important;   
+}
